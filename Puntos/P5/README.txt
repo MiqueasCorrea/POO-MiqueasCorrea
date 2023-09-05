@@ -1,0 +1,1 @@
+El punto 10 tiene las funcionalidades del punto 5 incorporadas.

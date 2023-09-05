@@ -1,0 +1,1 @@
+El punto 12 tiene las funcionalidades del punto 10 incorporadas.

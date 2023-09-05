@@ -1,0 +1,1 @@
+El punto 13 tiene las funcionalidades del ejercicio 12 incorporadas.
