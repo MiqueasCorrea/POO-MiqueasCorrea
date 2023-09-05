@@ -1,2 +1,7 @@
-# POO-MiqueasCorrea
-Repositorio de Programación orientada a objetos del alumno Miqueas Correa
+# POO
+##Repositorio de Programación orientada a Objetos
+
+## Alumno
+- **Apellido y Nombre:**: Correa Miqueas
+- **Legajo**: 191805
+
