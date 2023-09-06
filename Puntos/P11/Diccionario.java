@@ -22,8 +22,9 @@ public class Diccionario {
             String palabra_a_validar = respuesta.nextLine();
             if(palabra_a_validar.equals("0")){
                 fin = true;
+            } else{
+                this.palabras.add(palabra_a_validar);
             }
-            this.palabras.add(palabra_a_validar);
         } while(!fin);
     }
 

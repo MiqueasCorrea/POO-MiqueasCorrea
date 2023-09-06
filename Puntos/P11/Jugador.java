@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Jugador extends Diccionario{
+public class Jugador{
     private String nombre;
     private int puntaje;
 
@@ -16,7 +16,6 @@ public class Jugador extends Diccionario{
         boolean fin = false;
         Scanner respuesta = new Scanner(System.in);
         do {
-            boolean palabraEncontrada = false;
             System.out.print("Palabra de " + nombre + " (digite 0 para salir): ");
             String palabra_a_validar = respuesta.nextLine();
             palabra_a_validar = palabra_a_validar.toLowerCase();
@@ -39,12 +38,8 @@ public class Jugador extends Diccionario{
                         }
                     }
                     this.puntaje += puntos;
-                    palabraEncontrada = true;
                     break;
                 }
-            }
-            if(!palabraEncontrada){
-                System.out.println("La palabra no es valida!");
             }
         } while(!fin);
     }

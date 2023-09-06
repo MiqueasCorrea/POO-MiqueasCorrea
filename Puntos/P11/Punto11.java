@@ -14,13 +14,13 @@ public class Punto11{
         System.out.println("Ingrese palabras para el diccionario.");
         diccionario.agrerarPalabraDiccionario();
 
-        System.out.print("Palabras del diccionario:");
+        System.out.print("Palabras del diccionario: ");
         diccionario.mostrarPalabrasDiccionario();
 
-        System.out.println("\nPalabras del jugador 1: ");
+        System.out.println("\n\nPalabras del jugador 1: ");
         jugador1.pedirPalabra(diccionario);
 
-        System.out.println("Palabras del jugador 2: ");
+        System.out.println("\nPalabras del jugador 2: ");
         jugador2.pedirPalabra(diccionario);
 
         if(jugador1.getPuntaje()>jugador2.getPuntaje()){
