@@ -35,6 +35,8 @@ public class Menu {
                         System.out.println(AnsiColorsitos.YELLOW + "Saliendo del programa..." + AnsiColorsitos.RESET);
                     }
                     return respuesta;
+                } else{
+                    System.err.println("Error, verifique el rango.");
                 }
             } catch (Exception e){
                 System.err.println("Error, ingrese un numero.");
