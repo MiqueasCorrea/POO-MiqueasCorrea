@@ -100,11 +100,33 @@ public class Paquete {
             return;
         }
         System.out.print(AnsiColorsitos.YELLOW + "Digite el numero del proveedor" + AnsiColorsitos.RESET + ": ");
-        
 
+        boolean entrada = false;
+        while(!entrada){
+            try{
+                respuesta = escaner.nextInt();
+                entrada = true;
+            } catch( Exception e){
+                System.err.println("Digite un numero.\n");
+                escaner.nextLine();
+            }
+        }
 
+    }
 
-
-
+    public void mostrarPaquetes(List<Paquete> paquetes){
+        if (paquetes.size() == 0){
+            System.out.println("No hay paquetes vigentes.");
+            return;
+        }
+        int i = 0;
+        for(Paquete paquete : paquetes){
+            i++;
+            System.out.println(AnsiColorsitos.YELLOW + "\nPaquete " + i);
+            System.out.println(AnsiColorsitos.YELLOW + "Destino" + AnsiColorsitos.RESET + ": " + destino);
+            System.out.println(AnsiColorsitos.YELLOW + "Provedoor de transporte" + AnsiColorsitos.RESET + ": " + proovedor_de_transporte);
+            System.out.println(AnsiColorsitos.YELLOW + "Provedoor de hospedaje" + AnsiColorsitos.RESET + ": " + proovedor_de_hospedaje);
+            System.out.println(AnsiColorsitos.YELLOW + "Provedoor de excursion" + AnsiColorsitos.RESET + ": " + proovedor_de_excursion);
+        }
     }
 }
